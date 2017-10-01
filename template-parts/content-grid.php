@@ -17,7 +17,7 @@
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
 			</header><!-- .entry-header -->
-						
+
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<?php
 					$thumbnail_args = array(
@@ -29,13 +29,13 @@
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
-				<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read More', 'activello' ); ?></a></p>
+				<div class="read-more"><a href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read More', 'activello' ); ?></a></div>
 			</div><!-- .entry-summary -->
 			<?php else : ?>
 			<div class="entry-content">
 
 				<?php the_excerpt(); ?>
-				
+
 				<?php
 				wp_link_pages( array(
 					'before'            => '<div class="page-links">' . esc_html__( 'Pages:', 'activello' ),

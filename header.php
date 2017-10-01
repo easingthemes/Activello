@@ -9,10 +9,6 @@
 ?><!doctype html>
 	<!--[if !IE]>
 	<html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
-	<!--[if IE 7 ]>
-	<html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
-	<!--[if IE 8 ]>
-	<html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
 	<!--[if IE 9 ]>
 	<html class="no-js ie9" <?php language_attributes(); ?>> <![endif]-->
 	<!--[if gt IE 9]><!-->
@@ -48,7 +44,7 @@
 						<div class="nav-search"><?php
 							add_filter( 'get_search_form', 'activello_header_search_filter',10,3 );
 							echo get_search_form();
-							remove_filter( 'get_search_form', 'activello_header_search_filter' );?>							
+							remove_filter( 'get_search_form', 'activello_header_search_filter' );?>
 						</div>
 					</div>
 				</div>

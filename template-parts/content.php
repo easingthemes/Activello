@@ -62,7 +62,7 @@ if ( $index > 2 && is_home() && 'default' == $blog_layout ) {
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
-				<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read More', 'activello' ); ?></a></p>
+				<div class="read-more"><a href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read More', 'activello' ); ?></a></div>
 			</div><!-- .entry-summary -->
 			<?php else : ?>
 			<div class="entry-content">
