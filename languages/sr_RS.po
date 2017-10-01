@@ -193,7 +193,7 @@ msgstr "Uredi %s"
 
 #: ../content-single.php:55 ../content.php:73
 msgid "No comments yet"
-msgstr ""
+msgstr "Bez komentara jos uvek"
 
 #: ../content-single.php:55
 msgid "Comment (1)"

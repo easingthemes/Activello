@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src:
+    url('#{$assets-path}/fonts/iconmoon/fontawesome.ttf?d9h997') format('truetype'),
+    url('#{$assets-path}/fonts/iconmoon/fontawesome.woff?d9h997') format('woff'),
+    url('#{$assets-path}/fonts/iconmoon/fontawesome.svg?d9h997#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa, [class^="fa-"], [class*=" fa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'FontAwesome' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+a[href*="twitter.com"] .social_icon,
+.fa-twitter {
+    &:before {
+        content: "\f099";
+    }
+}
+a[href*="facebook.com"] .social_icon,
+.fa-facebook {
+    &:before {
+        content: "\f09a";
+    }
+}
+a[href*="instagram.com"] .social_icon,
+.fa-instagram {
+    &:before {
+        content: "\f16d";
+    }
+}
+.flex-prev,
+.fa-angle-left {
+    &:before {
+        content: "\f104";
+    }
+}
+.flex-next,
+.fa-angle-right {
+    &:before {
+        content: "\f105";
+    }
+}
+.fa-angle-up:before {
+    content: "\f106";
+}
+

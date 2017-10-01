@@ -15,6 +15,10 @@
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-wp-i18n": "^0.5.3",
-    "load-grunt-tasks": "^3.3.0"
+    "load-grunt-tasks": "^3.3.0",
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "css": "node-sass --output-style compressed --include-path scss src/scss/style.scss style.css"
   }
 }
