@@ -1843,3 +1843,29 @@ p.logged-in-as {
     display: block;
     clear: both;
 }
+
+
+.language-switcher {
+  position: relative;
+}
+
+.language-switcher__list {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.language-switcher ul {
+  padding: 0;
+  margin: 0;
+}
+
+.language-switcher li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.language-switcher img {
+  width: 25px;
+}
