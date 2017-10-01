@@ -205,7 +205,7 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 		// wp_enqueue_style( 'activello-icons', get_template_directory_uri() . '/assets/css/font-awesome.min.css' );
 
 		// Add Google Fonts
-		wp_enqueue_style( 'activello-fonts', '//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Montserrat:400,700' );
+		wp_enqueue_style( 'activello-fonts', '//fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,700&amp;subset=latin-ext' );
 
 		// Add slider CSS only if is front page ans slider is enabled
 		if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 ) {
