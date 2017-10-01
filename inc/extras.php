@@ -115,7 +115,7 @@ if ( ! function_exists( 'activello_featured_slider' ) ) :
  * Featured image slider, displayed on front page for static page and blog
  */
 	function activello_featured_slider() {
-		if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 ) {
+		if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 && ! wp_is_mobile()) {
 
 			wp_enqueue_style( 'flexslider-css' );
 			wp_enqueue_script( 'flexslider-js' );
@@ -324,7 +324,7 @@ if ( ! function_exists( 'get_activello_theme_setting' ) ) {
 			  .woocommerce input.button.alt:hover, .input-group-btn:last-child>.btn:hover, .scroll-to-top:hover,
 			  button, html input[type=button]:hover, input[type=reset]:hover, .comment-list li .comment-body:after, .page-links a:hover span, .page-links span,
 			  input[type=submit]:hover, .comment-form #submit:hover, .tagcloud a:hover,
-			  .single .entry-content a:hover,  
+			  .single .entry-content a:hover,
 			  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 			  .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus,
 			  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{background-color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '; }';
