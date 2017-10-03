@@ -453,7 +453,7 @@ msgstr ""
 msgid "Add a menu"
 msgstr ""
 
-#: inc/socialnav.php:13
+#: src/components/social-icons/social-icons.php:13
 msgctxt "nav menu location"
 msgid "Social Menu"
 msgstr ""

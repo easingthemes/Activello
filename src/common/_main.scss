@@ -19,6 +19,7 @@
 */
 
 @import "global";
+@import "../components/layout/layout";
 
 .single .entry-content a {
     color: #a161bf;
@@ -62,10 +63,6 @@ article.sticky.post {
 .page-links {
     clear: both;
     margin: 0 0 1.5em;
-}
-.main-content-area {
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 /* =Post styling
@@ -294,7 +291,7 @@ article.grid iframe {
 /* Masonary style */
 
 @media (min-width: 768px) {
-    .article-container {
+    .posts {
         overflow: hidden;
     }
     .half-posts article.post {
@@ -308,7 +305,7 @@ article.grid iframe {
         border: 0;
         padding: 0 0 30px;
     }
-    .blog .page-1 .article-container article.post:first-child, .blog .page-1 .article-container article.post:nth-child(2) {
+    .blog .page-1 .posts article.post:first-child, .blog .page-1 .posts article.post:nth-child(2) {
         width: 100%;
         padding-right: 0!important;
     }
@@ -335,19 +332,11 @@ article.grid iframe {
         padding-right: 0;
     }
 }
-.site-main {
-    max-width: 100%;
-}
+
 @media (max-width: 768px) {
-    .site-main {
-        width: 100% !important;
-    }
     .post-inner-content {
         padding-left: 0 !important;
         padding-right: 0 !important;
-    }
-    #secondary {
-        padding: 30px 15px 0!important;
     }
     #masthead ul.nav ul ul {
         left: auto;
@@ -456,96 +445,27 @@ embed, iframe, object {
 
 /* =Widgets
 ----------------------------------------------- */
+@import "../components/widget/widget";
 
 
-/* Make sure select elements fit in widgets */
 
-.widget select {
-    max-width: 100%;
-    height: 40px;
-}
-.widget input[type="text"], .widget input[type="email"], .widget input[type="tel"], .widget input[type="url"], .widget input[type="password"], .widget input[type="search"], .widget textarea, .widget select {
-    padding: 5px 10px;
-    width: 95%;
-}
 
-/* Search widget */
-
-.widget_search .search-submit {
-    display: none;
-}
-.widget input[type="text"].search-query {
-    width: 100%;
-}
-
-.widget ul li {
-    list-style: none;
-}
-.widget_archive {
-    ul li {
-        border-bottom: 1px solid #F2F2F2;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-    }
-}
-.widget ul {
-    padding: 0;
-    line-height: 18px;
-    font-size: 14px;
-}
-.widget ul.nav.nav-tabs {
-    padding: 0;
-}
-#secondary .widget {
-    margin-bottom: 50px;
-    overflow: hidden;
-}
-#secondary .widget:last-child {
-    margin-bottom: 0px;
-}
 .tab-content ul li {
     list-style: none;
 }
-#secondary .widget-title {
-    font-size: 14px;
-        text-transform: uppercase;
-    position: relative;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    color: #636467;
-}
-#secondary .widget-title:after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 40px;
-    background: #a161bf;
-}
-.widget ul ul {
-    padding: 10px;
-}
-.widget #social ul li {
-    border-bottom: 0;
-}
-.not-found-widget {
-    margin-top: 30px;
-}
-@media (max-width: 767px) {
-    #secondary {
-        clear: both;
-    }
-}
+
+
+
 @media (max-width: 768px) {
 	.navbar-toggle {
 	    display: block;
 	}
 }
-ul#menu-social-items, #secondary .widget .social-icons {
+ul#menu-social-items {
     margin-bottom: 0;
 }
-ul.children, ul.children li {
+ul.children,
+ul.children li {
     border: 0;
     margin: 0;
 }
@@ -579,17 +499,8 @@ ul.children, ul.children li {
 .recent-posts-wrapper .post .post-content {
     margin-left: 100px;
 }
-.widget .post-content> span {
-    display: block;
-}
-#secondary .widget .post-content a {
-    font-style: italic;
-    font-size: 16px;
-}
-#secondary .widget .post-content a:hover {}
-.widget .post-content span {
-    font-size: 12px;
-}
+
+
 .tagcloud {
     margin-top: 25px;
 }
@@ -1362,18 +1273,18 @@ p.logged-in-as {
 /* =Footer
 ----------------------------------------------- */
 
-#footer-area {
+.footer {
     background-color: #f2f2f2;
     color: #999;
 }
-#footer-area .footer-widget-area {
+.footer .footer-widget-area {
     padding: 40px 0 20px 0;
     overflow: hidden;
 }
-#footer-area ul li {
+.footer ul li {
     border-bottom: 1px solid #444;
 }
-#footer-area .site-info nav ul li {
+.footer .site-info nav ul li {
     border-bottom: none;
 }
 .widgettitle {
@@ -1383,9 +1294,7 @@ p.logged-in-as {
     margin-top: 0;
     color: inherit;
 }
-#footer-area .widget ul li {
-    list-style: none;
-}
+
 .footer-nav.nav> li {
     position: relative;
     display: inline-block;
@@ -1457,16 +1366,28 @@ p.logged-in-as {
 /* =Social icons
 ----------------------------------------------- */
 
-#secondary .widget .social-icons a {
-    margin-right: 20px;
-}
 .social-icons {
-    position: relative;
-    margin-bottom: 20px;
-    text-align: center;
-}
-#secondary .widget .social-icons {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+
+  .layout__sidebar & {
     text-align: left;
+
+    a {
+      margin-right: 20px;
+    }
+  }
+}
+#social li{
+	display: inline-block;
+}
+#social li,
+#social ul {
+	border: 0!important;
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
 }
 #social a {
     color: #696969;
@@ -1495,7 +1416,7 @@ p.logged-in-as {
 #social li a span {
     display: none;
 }
-#footer-area #social a {
+.footer #social a {
     margin: 0 15px;
 }
 @media (max-width: 992px) {
@@ -1548,61 +1469,7 @@ p.logged-in-as {
     margin: 0;
 }
 
-/* Woocommerce */
 
-.woocommerce .woocommerce-info {
-    border-top-color: #a161bf;
-}
-.woocommerce .woocommerce-info:before {
-    color: #a161bf;
-}
-.related.products {
-    clear: both;
-}
-.woocommerce div.product div.images .flex-control-thumbs li:nth-child(4n+1) { clear: left; }
-.woocommerce div.product div.images .woocommerce-product-gallery__wrapper { margin: 0; }
-.woocommerce-product-search {
-    width: 100%;
-}
-.woocommerce-product-search:after {
-    display: block;
-    content: "";
-    clear: left;
-}
-.woocommerce-product-search .search-field,
-.woocommerce-product-search input[type=submit] {
-    float: left;
-    box-sizing: border-box;
-}
-
-.widget .woocommerce-product-search input[type="search"].search-field {
-    width: 80%;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    padding: 0 10px;
-    line-height: 35px;
-}
-
-.woocommerce-product-search input[type=submit] {
-    width: 20%;
-    padding: 1px 0;
-    border: 0 none;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-/* Layout */
-
-.has-sidebar-left #secondary {
-    padding-right: 40px;
-}
-.no-sidebar {
-    float: none;
-    margin: 0 auto;
-}
-.full-width {
-    width: 100%;
-}
 
 /* Infinite Scroll */
 .infinite-wrap:after {

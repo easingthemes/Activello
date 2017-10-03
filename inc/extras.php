@@ -311,7 +311,7 @@ if ( ! function_exists( 'get_activello_theme_setting' ) ) {
 			  .navbar-default .navbar-nav > .open > a:focus, .cat-title a,
 			  .single .entry-content a, .site-info a:hover {color:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
 
-			echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, #secondary .widget-title:after, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {background:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
+			echo 'article.post .post-categories:after, .post-inner-content .cat-item:after, .widget__title:after, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {background:' . esc_html( get_theme_mod( 'accent_color' ) ) . '}';
 
 			echo '.btn-default:hover, .label-default[href]:hover,
 			  .label-default[href]:focus, .btn-default:hover,

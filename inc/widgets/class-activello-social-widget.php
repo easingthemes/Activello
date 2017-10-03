@@ -28,12 +28,8 @@ class Activello_Social_Widget extends WP_Widget {
 	?>
 
 	<!-- social icons -->
-	<div class="social-icons sticky-sidebar-social">
-
-
-	<?php activello_social_icons(); ?>
-
-
+	<div class="widget__social">
+	  <?php activello_social_icons(); ?>
 	</div><!-- end social icons -->
 
 

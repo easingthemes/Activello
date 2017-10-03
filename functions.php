@@ -140,7 +140,7 @@ if ( ! function_exists( 'activello_widgets_init' ) ) {
 			'id'            => 'sidebar-1',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
+			'before_title'  => '<h3 class="widget__title">',
 			'after_title'   => '</h3>',
 		));
 
@@ -158,7 +158,7 @@ function notamagic_widgets_init() {
 		'id'            => 'page_top',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
+		'before_title'  => '<h3 class="widget__title">',
 		'after_title'   => '</h3>',
 	) );
 
@@ -261,7 +261,7 @@ require get_template_directory() . '/inc/metaboxes.php';
 /**
  * Social Nav Menu
  */
-require get_template_directory() . '/inc/socialnav.php';
+require get_template_directory() . '/src/components/social-icons/social-icons.php';
 
 /* Globals */
 global $site_layout, $header_show;
