@@ -1,0 +1,74 @@
+/* =Singe Post/Page Pagination
+----------------------------------------------- */
+
+.page-links span {
+    display: inline-block;
+    color: #fff;
+    background-color: #a161bf;
+    border-radius: 4px;
+    padding: 2px 10px;
+    margin-left: 2px;
+}
+.page-links a span {
+    background-color: #f2f2f2;
+    border: none;
+    color: #696962;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.page-links a:hover span {
+    background-color: #a161bf;
+    border: none;
+    color: #fff;
+}
+.pagination .fa-chevron-left, .pagination .fa-chevron-right {
+    font-size: 12px;
+}
+.pagination li a {
+    color: #a161bf;
+}
+.pagination li:hover a {
+    color: #a161bf;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    color: #FFF;
+    background-color: #a161bf;
+    border-color: #a161bf;
+}
+.pagination>li>a, .pagination>li>span {
+    padding: 9px 14px;
+    border-color: #dadada;
+}
+.bottom-pagination {
+    text-align: center;
+}
+.post-navigation a, .paging-navigation a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.post-navigation a:hover, .paging-navigation a:hover {
+    text-decoration: none;
+}
+.paging-navigation {
+    margin-top: 1.5em;
+    text-transform: uppercase;
+}
+.post-navigation .nav-previous, .paging-navigation .nav-previous {
+    float: left;
+}
+.post-navigation .nav-next, .paging-navigation .nav-next {
+    float: right;
+    text-align: right;
+}
+.more-link {
+    float: right;
+    margin: 10px 0;
+}
+.single .nav-links {
+    margin-top: 30px;
+}

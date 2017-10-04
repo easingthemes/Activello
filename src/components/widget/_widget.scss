@@ -110,3 +110,34 @@
     margin-top: 30px;
 }
 
+
+
+/* Custom Category Widget */
+
+.cats-widget ul li span {
+    float: right;
+}
+
+/* Recent Post widgets */
+
+.recent-posts-wrapper .post {
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+}
+.recent-posts-wrapper .post .post-image {
+    width: 80px;
+    height: 80px;
+    float: left;
+    display: block;
+    background-color: #DADADA;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.recent-posts-wrapper .post .post-image img:hover {
+    opacity: 0.6 !important;
+}
+.recent-posts-wrapper .post .post-content {
+    margin-left: 100px;
+}

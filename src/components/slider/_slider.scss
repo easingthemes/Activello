@@ -102,7 +102,7 @@ html[xmlns] .slides {display: block;}
 	text-align: center;
 }
 .flex-caption .excerpt {
-	
+
 }
 .flex-caption h2 {
 	color: #ffffff;
@@ -158,4 +158,28 @@ html[xmlns] .slides {display: block;}
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+}
+
+.flex-caption .post-categories a:hover,
+.flex-caption h2:hover {
+    color: #a161bf;
+}
+
+div.flex-caption {
+    top: auto;
+    bottom: 25%;
+}
+
+
+@media (max-width: 768px) {
+    .flex-caption {
+        display: none;
+    }
+}
+/* =Custom Styles
+----------------------------------------------- */
+
+.page-template-page-homepage-php .carousel {
+    margin-top: -20px;
+    margin-bottom: 20px;
 }

@@ -16,7 +16,7 @@
       <div class="col-md-6 not-found-widget">
         <?php if ( activello_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
         <div class="widget widget_categories">
-          <h2 class="widgettitle"><?php esc_html_e( 'Most Used Categories', 'activello' ); ?></h2>
+          <h2 class="widget__title"><?php esc_html_e( 'Most Used Categories', 'activello' ); ?></h2>
           <ul>
           <?php
             wp_list_categories( array(

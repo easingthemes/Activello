@@ -12,7 +12,7 @@
 	<!--[if gt IE 9]><!-->
 <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 
-  <?php get_template_part('src/components/head/head'); ?>
+  <?php get_template_part('src/components/layout/head'); ?>
 
 <body <?php body_class(); ?>>
   <div class="site">

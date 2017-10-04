@@ -1,0 +1,301 @@
+
+/* =Content
+----------------------------------------------- */
+.single .entry-content a {
+    color: #a161bf;
+}
+.single .entry-content a:hover {
+    background: #a161bf;
+    color: #fff;
+}
+.single .entry-content .page-links a:hover {
+    background-color: transparent;
+}
+
+article.sticky.post {
+    background: #f9f9f9;
+    padding: 20px 0 0;
+}
+.sticky .entry-content {
+    margin: 10px 20px;
+}
+.hentry {
+    margin: 0;
+}
+.byline, .updated {
+    display: none;
+}
+.single .byline, .group-blog .byline {
+    display: inline;
+    margin-right: 0;
+}
+.single article.post {
+    margin-bottom: 50px;
+}
+.page-content, .entry-content, .entry-summary {
+    margin: 20px 0 0;
+}
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+/* =Post styling
+----------------------------------------------- */
+
+.entry-meta a {
+    font-size: 13px;
+    color: #6B6B6B;
+}
+.entry-meta {
+    margin-bottom: 20px;
+}
+footer.entry-meta {
+    margin-bottom: 0;
+}
+.page-header {
+    margin-top: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.entry-meta .fa {
+    font-size: 14px;
+    margin-right: 3px;
+}
+.entry-meta span {
+    margin-right: 10px;
+}
+.entry-title {
+    color: #444;
+    margin-bottom: 30px;
+}
+.page .entry-title {
+    margin-bottom: 30px;
+}
+.entry-title a {
+    color: #444;
+}
+hr.section-divider {
+    border-color: #E8E8E8;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.single-category {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single-category > li {
+    display: inline-block;
+}
+.single-category > li.show-more-categories {
+    cursor: pointer;
+    position: relative;
+}
+.show-more-categories .subcategories {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate( -50%, 100% );
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    background-color: #fff;
+}
+.show-more-categories .subcategories li {
+    margin-bottom: 0;
+}
+.show-more-categories .subcategories li:after {
+    display: none;
+}
+.single-category > li.show-more-categories:hover .subcategories,
+.single-category > li.show-more-categories.active .subcategories {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .single-category > li.show-more-categories:not(.active) .subcategories {
+        display: none;
+    }
+}
+
+
+.secondary-content-box {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.single-view, .blog-item-wrap {}
+.post-inner-content {
+    border-bottom: 1px solid #dedede;
+    padding: 30px 0;
+}
+.archive .post-inner-content {
+    margin-bottom: 30px;
+}
+.page .post-inner-content {
+    border: 0;
+    padding: 0;
+}
+article.post:first-child .post-inner-content {
+    padding-top: 0;
+}
+.entry-header {
+    text-align: center;
+}
+.entry-title {
+    font-family: "Lora", serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.entry-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.entry-footer> *, .entry-footer a {
+    color: #696969;
+    margin: 0 6px;
+}
+.more-link, .says {
+    display: none;
+}
+
+
+.cat-title {
+    border-bottom: 1px solid #dedede;
+    margin: -30px 0 50px 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.cat-title ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.cat-title ul li {
+    display: inline;
+}
+.cat-title a {
+    color: #8e6193;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+article.post .post-categories, .post-inner-content .cat-item {
+    position: relative;
+    font-size: 12px;
+    margin: 0 0 15px 0;
+    padding: 0 0 8px 0;
+    list-style: none;
+}
+article.post .post-categories:after, .post-inner-content .cat-item:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 40px;
+    margin-left: -20px;
+    background: #a161bf;
+}
+article.post .post-categories a, .post-inner-content .cat-item a {
+    color: #696969;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+article.post {
+    width: 100%;
+    margin: 0;
+    padding-right: 10px;
+}
+article.grid {
+    padding: 0;
+    width: 325px;
+}
+article.grid .post-inner-content {
+    border: 0;
+    padding-bottom: 0;
+}
+article.grid iframe {
+    max-width: 325px;
+    max-height: 164px;
+    width: 100%;
+}
+
+/* Masonary style */
+
+@media (min-width: 768px) {
+    .posts {
+        overflow: hidden;
+    }
+    .half-posts article.post {
+        width: 50%;
+        margin: 0;
+        padding-right: 10px;
+        display: inline-block;
+        float: left;
+    }
+    .blog.home article.post .post-inner-content {
+        border: 0;
+        padding: 0 0 30px;
+    }
+    .blog .page-1 .posts article.post:first-child, .blog .page-1 .posts article.post:nth-child(2) {
+        width: 100%;
+        padding-right: 0!important;
+    }
+    .blog.home .page-1 article.post .post-inner-content,
+    .blog.home .page-1 article.post .post-inner-content {
+        border-bottom: 1px solid #dedede;
+    }
+    .blog.home .page-1 article.post:first-child .post-inner-content {
+        padding: 0 0 50px;
+    }
+    .blog.home .page-1 article.post .post-inner-content {
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+    .blog.home .page-1 article.post:first-child .entry-footer,
+    .blog.home .page-1 article.post:nth-child(2) .entry-footer {
+        display: block;
+    }
+    .half-posts article.post:nth-child(odd) {
+        clear: left;
+        padding-right: 25px;
+    }
+    .blog.home article.post:nth-child(even) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .post-inner-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #masthead ul.nav ul ul {
+        left: auto;
+        margin: 0;
+        padding-left: 20px;
+    }
+}
+
+article.post .post-categories a:hover,
+.entry-title a:hover,
+.entry-meta a:hover,
+.entry-footer a:hover,
+.post-inner-content .cat-item a:hover {
+    color: #a161bf;
+}
+
+/* =Asides
+----------------------------------------------- */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+    display: none;
+}
+

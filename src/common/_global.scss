@@ -137,7 +137,9 @@ textarea {
     width: 100%;
 }
 
-
+embed, iframe, object {
+    max-width: 100%;
+}
 
 /* Alignment */
 
@@ -197,4 +199,41 @@ textarea {
 }
 .clear:after, .entry-content:after, .gallery:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after, .home-widget-area:before {
     clear: both;
+}
+
+@media (max-width: 768px) {
+    .pull-right {
+        float: none !important;
+    }
+    .pull-left {
+        float: none !important;
+    }
+}
+
+
+.tab-content ul li {
+    list-style: none;
+}
+
+
+
+ul.children,
+ul.children li {
+    border: 0;
+    margin: 0;
+}
+
+
+/* =Elements when no javaScript is present
+----------------------------------------------- */
+
+.widget_rss ul,
+.postform,
+table#wp-calendar {
+    display: none;
+}
+.no-js .widget_rss ul,
+.no-js .postform,
+.no-js table#wp-calendar {
+    display: block;
 }

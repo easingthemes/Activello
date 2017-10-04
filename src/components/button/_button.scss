@@ -1,0 +1,49 @@
+/* =Buttons
+----------------------------------------------- */
+button,
+html input[type=button],
+input[type=reset], input[type=submit],
+.comment-form #submit {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+button,
+html input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+.comment-form #submit:hover {
+    background: #a161bf;
+    color: #fff;
+}
+
+.btn-default, .label-default, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .btn.btn-default, button, .input-group-btn:last-child>.btn, input[type=submit] {
+    background: #f2f2f2;
+    border-color: transparent;
+    color: #696969;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+.btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, button:hover, .input-group-btn:last-child>.btn:hover, input[type=submit]:hover {
+    background-color: #a161bf;
+    border-color: transparent;
+    color: #fff;
+}
+.input-group-btn:last-child>.btn {
+    font-size: 12px;
+    opacity: 1;
+    padding: 8px 20px;
+    line-height: 16px;
+}
+#subscription-toggle {
+    float: right;
+}
+
