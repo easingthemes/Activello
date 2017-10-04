@@ -1,5 +1,6 @@
 @import "../common/variables";
-$assets-path: 'platform_wp/wp-content/themes/knowingberlin/assets';
+// <?php echo get_stylesheet_directory() ?>
+$assets-path: '<?php echo get_stylesheet_directory_uri();s ?>/assets';
 @import "../common/bootstrap-custom";
 @import "../common/global";
 @import "../common/font-awesome";
