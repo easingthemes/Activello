@@ -355,26 +355,3 @@ function activello_add_top_level_menu_url( $atts, $item, $args ) {
 	return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'activello_add_top_level_menu_url', 99, 3 );
-
-/**
- * Makes the top level navigation menu item clickable
- */
-function activello_make_top_level_menu_clickable() {
-	if ( ! wp_is_mobile() ) { ?>
-		<script type="text/javascript">
-			jQuery( document ).ready( function( $ ){
-				if ( $( window ).width() >= 767 ){
-					$( '.navbar-nav > li.menu-item > a' ).click( function(){
-						if( $( this ).attr('target') !== '_blank' ){
-							window.location = $( this ).attr( 'href' );
-						}else{
-							var win = window.open($( this ).attr( 'href' ), '_blank');
-							win.focus();
-						}
-					});
-				}
-			});
-		</script>
-	<?php }
-}
-add_action( 'wp_footer', 'activello_make_top_level_menu_clickable', 1 );

@@ -203,7 +203,6 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 
 		// 2.1. Add CSS:  main theme stylesheet
 		wp_enqueue_style( 'theme-css', get_template_directory_uri() . '/assets/css/theme.css' );
-  wp_enqueue_style( 'boot-css', get_template_directory_uri() . '/assets/css/bootstrap.css' );
 
 		// 2.2. Add CSS: Home CSS only if is front page ans slider is enabled
 		if ( ( is_home() || is_front_page() ) && get_theme_mod( 'activello_featured_hide' ) == 1 ) {

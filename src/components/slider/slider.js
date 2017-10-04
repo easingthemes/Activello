@@ -3,7 +3,6 @@ import 'flexslider';
 const slider = () => {
   const $slider = jQuery('.flexslider');
   // Slider functions
-  console.log('slider');
   if (0 !== $slider.length) {
     $slider.flexslider({
       animation: 'fade',
