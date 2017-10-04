@@ -1,0 +1,11 @@
+@import "../common/variables";
+$assets-path: 'platform_wp/wp-content/themes/knowingberlin/assets';
+@import "../common/bootstrap-custom";
+@import "../common/global";
+@import "../common/font-awesome";
+
+@import "../components/layout/layout";
+@import "../components/navigation/navigation";
+@import "../components/language-switcher/language-switcher";
+@import "../components/logo/logo";
+@import "../components/search/search";
