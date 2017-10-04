@@ -8,7 +8,9 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "extract-text-webpack-plugin": "^3.0.1",
     "node-sass": "^4.5.3",
+    "style-ext-html-webpack-plugin": "^3.4.1",
     "webpack": "^3.6.0",
     "webpack-glob-entries": "^1.0.1"
   },

@@ -1,6 +1,7 @@
-// Bootstrap specific functions and styling
+import post from '../components/post/post';
+// / Bootstrap specific functions and styling
 jQuery(document).ready(function() {
-
+  post();
 	// Now we'll add some classes for the WordPress default widgets - let's go
 	jQuery('.widget_rss ul').addClass('media-list');
 
