@@ -1,5 +1,6 @@
 /* =Buttons
 ----------------------------------------------- */
+@import "../../common/variables";
 button,
 html input[type=button],
 input[type=reset], input[type=submit],
@@ -24,7 +25,7 @@ input[type=submit]:hover,
     border-color: transparent;
     color: #696969;
     display: inline-block;
-    font-family: "Montserrat", sans-serif;
+  @include f-secondary();;
     font-size: 12px;
     text-transform: uppercase;
     -webkit-transition: background-color 0.3s linear;

@@ -17,7 +17,8 @@
     "babel-preset-env": "^1.6.0",
     "bootstrap-sass": "^3.3.7",
     "exports-loader": "^0.6.4",
-    "flexslider": "^2.6.4"
+    "flexslider": "^2.6.4",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "css": "node-sass --output-style compressed --include-path ./node_modules -o assets/css src/entry",

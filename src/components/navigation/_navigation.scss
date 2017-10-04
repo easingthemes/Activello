@@ -1,15 +1,14 @@
 /* =Navigation
 ----------------------------------------------- */
 
-
+@import "../../common/variables";
 .nav>li>a {
     text-transform: uppercase;
 }
 .navbar.navbar-default {
     background-color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+  @include f-secondary();;
     margin-bottom: 0;
-    font-weight: 400;
     min-height: auto;
     padding: 0;
     box-shadow: 0 0 2px #e3e3e3;
@@ -31,15 +30,16 @@
     margin: 0;
 }
 .navbar-brand {
-    display: inline-block;
-    float: none;
-    font-family: 'Lora', serif;
-    color: #DADADA;
-    font-size: 30px;
-    height: auto;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+  display: inline-block;
+  float: none;
+  color: #DADADA;
+  font-size: 30px;
+  height: auto;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+
+  @include f-normal();
 }
 .navbar-default .navbar-nav> .open> a, .navbar-default .navbar-nav> .open> a:hover, .navbar-default .navbar-nav> .open> a:focus {
     border-right: none;

@@ -1,0 +1,52 @@
+// Variables
+
+$fontstack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-default: 'Lora';
+$font-default-lc: 'lora';
+$font-secondary: 'Montserrat';
+$font-secondary-lc: 'montserrat';
+
+// Mixins
+
+@mixin wf-loader($font-name, $font-name-lc, $font-weight: false, $font-style: false) {
+  // set defaults
+  $font-style-code: 'n' !default;
+  $font-weight-code: 4 !default;
+
+  // set weight if it exists
+  @if $font-weight {
+    font-weight: $font-weight;
+    $font-weight-code: $font-weight / 100;
+  }
+
+  // set style if it exists
+  @if $font-style {
+    font-style: $font-style;
+    $font-style-code: 'i';
+  }
+
+  // create html class
+  .wf-#{$font-name-lc}-#{$font-style-code}#{$font-weight-code}-active & {
+    font-family: $font-name;
+  }
+}
+
+
+// Extendables
+
+@mixin f-normal() {
+  @include wf-loader($font-default, $font-default-lc, 400);
+}
+
+@mixin f-italic() {
+  @include wf-loader($font-default, $font-default-lc, 400, italic);
+}
+
+@mixin f-secondary() {
+  @include wf-loader($font-secondary, $font-secondary-lc, 400);
+}
+
+@mixin f-secondary-bold() {
+  @include wf-loader($font-secondary, $font-secondary-lc, 700);
+}
+

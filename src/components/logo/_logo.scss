@@ -1,4 +1,4 @@
-
+@import "../../common/variables";
 #logo {
     padding: 50px 0 45px 0;
     text-align: center;
@@ -14,7 +14,7 @@ a.custom-logo-link {
     color: #1c202a;
 }
 .tagline {
-    font-family: 'Montserrat', sans-serif;
+  @include f-secondary();;
     margin-top: 10px;
     letter-spacing: 1px;
 }

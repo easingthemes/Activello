@@ -1,6 +1,6 @@
 /* =Comments
 ----------------------------------------------- */
-
+@import "../../common/variables";
 .comment-content {
     margin-top: 10px;
 }
@@ -90,7 +90,7 @@ p.logged-in-as {
     margin-left: 20px;
     display: inline-block;
     padding: 4px 10px;
-    font-family: "Montserrat", sans-serif;
+  @include f-secondary();;
     text-transform: uppercase;
 }
 .form-allowed-tags code {
@@ -157,7 +157,7 @@ p.logged-in-as {
     font-weight: 700;
 }
 .comment-author .fn {
-    font-family: "Montserrat", sans-serif;
+  @include f-secondary();;
     letter-spacing: 2px;
     font-style: normal;
 }

@@ -1,4 +1,4 @@
-
+@import "../../common/variables";
 /* =Content
 ----------------------------------------------- */
 .single .entry-content a {
@@ -144,11 +144,11 @@ article.post:first-child .post-inner-content {
     text-align: center;
 }
 .entry-title {
-    font-family: "Lora", serif;
-    font-size: 24px;
-    font-style: italic;
-    margin-top: 0;
-    margin-bottom: 15px;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @include f-italic();
 }
 .entry-footer {
     margin-top: 20px;
@@ -179,8 +179,8 @@ article.post:first-child .post-inner-content {
 }
 .cat-title a {
     color: #8e6193;
-    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
+  @include f-secondary();;
 }
 article.post .post-categories, .post-inner-content .cat-item {
     position: relative;
@@ -201,7 +201,7 @@ article.post .post-categories:after, .post-inner-content .cat-item:after {
 }
 article.post .post-categories a, .post-inner-content .cat-item a {
     color: #696969;
-    font-family: 'Montserrat', sans-serif;
+  @include f-secondary();;
     letter-spacing: 1px;
     text-transform: uppercase;
 }

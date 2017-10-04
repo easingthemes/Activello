@@ -12,6 +12,7 @@
 
 /* Browser Resets
 *********************************/
+@import "../../common/variables";
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
@@ -106,15 +107,15 @@ html[xmlns] .slides {display: block;}
 }
 .flex-caption h2 {
 	color: #ffffff;
-	font-family: 'Lora', serif;
-	font-style: italic;
 	font-size: 28px;
 	margin-bottom: 20px;
+
+  @include f-italic();
 }
 .flex-caption .post-categories a,
 .flex-caption .read-more a {
 	color: #ffffff;
-	font-family: 'Montserrat', sans-serif;
+  @include f-secondary();;
 	text-transform: uppercase;
 }
 .flex-caption .read-more a {

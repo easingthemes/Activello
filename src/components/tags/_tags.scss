@@ -1,4 +1,4 @@
-
+@import "../../common/variables";
 .tagcloud {
     margin-top: 25px;
 }
@@ -10,7 +10,7 @@
     display: inline-block;
     background-color: #f2f2f2;
     letter-spacing: 1px;
-    font-family: "Montserrat", sans-serif;
+  @include f-secondary();;
     font-size: 10px !important;
     text-transform: uppercase;
 }

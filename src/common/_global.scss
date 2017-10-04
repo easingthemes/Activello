@@ -1,13 +1,15 @@
 /* =Global
 ----------------------------------------------- */
+@import "./variables";
 
 body {
     color: #696969;
     background-color: #FFFFFF;
     word-wrap: break-word;
-    font-family: 'Lora', serif;
     line-height: 2;
     font-size: 14px;
+  font-family: $fontstack;
+  @include f-normal();
 }
 a {
     color: #393939;
@@ -29,8 +31,7 @@ a:focus {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #696969;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+  @include f-secondary();;
     margin: 30px 0;
 }
 .container {
@@ -89,7 +90,7 @@ img {
     /* Adhere to container width. */
 }
 button, input, select, textarea {
-    font-family: 'Montserrat', sans-serif;
+  @include f-secondary();;
     font-size: 100%;
     /* Corrects font size not being inherited in all browsers */
     margin: 0;

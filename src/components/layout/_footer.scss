@@ -1,4 +1,4 @@
-
+@import "../../common/variables";
 /* =Footer
 ----------------------------------------------- */
 
@@ -29,7 +29,7 @@
     overflow: hidden;
 }
 .copyright {
-    font-family: "Montserrat", sans-serif;
+  @include f-secondary();;
     margin-top: 10px;
 }
 .copyright, .copyright a {

@@ -1,6 +1,6 @@
 /* =Singe Post/Page Pagination
 ----------------------------------------------- */
-
+@import "../../common/variables";
 .page-links span {
     display: inline-block;
     color: #fff;
@@ -45,7 +45,7 @@
     text-align: center;
 }
 .post-navigation a, .paging-navigation a {
-    font-family: "Montserrat", sans-serif;
+  @include f-secondary();;
     font-size: 12px;
     display: block;
     letter-spacing: 1px;

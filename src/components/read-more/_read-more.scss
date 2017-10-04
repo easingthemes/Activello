@@ -1,3 +1,4 @@
+@import "../../common/variables";
 .read-more {
     text-align: center;
 }
@@ -5,8 +6,7 @@
     border-left: 2px solid #696969;
     border-right: 2px solid #696969;
     color: #696969;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+  @include f-secondary-bold();
     line-height: 1.2;
     letter-spacing: 1px;
     display: inline-block;

@@ -199,7 +199,7 @@ if ( ! function_exists( 'activello_scripts' ) ) {
 	function activello_scripts() {
 
     // 1. Add FONTS: Google Fonts
-    wp_enqueue_style( 'theme-fonts', '//fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,700&amp;subset=latin-ext' );
+    // wp_enqueue_style( 'theme-fonts', '//fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,700&amp;subset=latin-ext' );
 
 		// 2.1. Add CSS:  main theme stylesheet
 		wp_enqueue_style( 'theme-css', get_template_directory_uri() . '/assets/css/theme.css' );
