@@ -21,5 +21,5 @@
   </div><!-- .site-info -->
   <?php get_template_part('src/components/scroll-to-top/scroll-to-top'); ?>
 </footer><!-- #colophon -->
-
+<!-- W3TC-include-js-head -->
 <?php wp_footer(); ?>

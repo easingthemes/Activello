@@ -15,3 +15,4 @@
   </div>
 
 </header><!-- #masthead -->
+<!-- W3TC-include-css -->
