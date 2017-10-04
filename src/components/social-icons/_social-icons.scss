@@ -44,3 +44,73 @@ ul#menu-social-items {
     margin-bottom: 0;
 }
 
+.dvk-social-sharing {
+  line-height: 16px;
+
+  .ss-text {
+    display: none;
+  }
+
+  > a {
+    margin-left: 3px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 0;
+
+    &:hover {
+      background: none !important;
+    }
+
+    &:focus,
+    &:hover {
+      .ss-icon {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .ss-icon {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+      background-size: cover;
+      opacity: 1;
+  }
+}
+
+.ss-icon-twitter {
+    background-image: url('#{$assets-path}/images/twitter.svg')
+}
+
+.ss-icon-facebook {
+    background-image: url('#{$assets-path}/images/facebook.svg')
+}
+
+.ss-icon-googleplus {
+    background-image: url('#{$assets-path}/images/google-plus.svg')
+}
+
+.ss-icon-linkedin {
+    background-image: url('#{$assets-path}/images/linkedin.svg')
+}
+
+.ss-icon-size-32 {
+  line-height: 32px;
+
+  .ss-icon {
+     width: 32px;
+     height: 32px
+  }
+}
+
+
+.ss-icon-size-48 {
+    line-height: 48px;
+
+  .ss-icon {
+      width: 48px;
+      height: 48px
+  }
+}
